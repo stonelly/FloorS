@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.microsoft.com/dynamics/2008/01/services" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.microsoft.com/dynamics/2008/01/services/Imports">
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2008/01/services" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AxInterfaceCreateFGRAFJournalRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateFGRAFJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateFGRAFJournalRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateFGRAFJournalResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateFGRAFJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_createFGRAFJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCheckCBDItemRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCheckCBDItemRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCheckCBDItemRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCheckCBDItemResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCheckCBDItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_checkCBDItem_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceFindOrCreateRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceFindOrCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceFindOrCreateRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceFindOrCreateResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceFindOrCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_findOrCreate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateBOMJournalRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateBOMJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateBOMJournalRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateBOMJournalResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateBOMJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_createBOMJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvMovJournalRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateInvMovJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvMovJournalRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvMovJournalResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateInvMovJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_createInvMovJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateRAFJournalRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateRAFJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateRAFJournalRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateRAFJournalResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateRAFJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_createRAFJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvTransJournalRequest">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateInvTransJournalRequest" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvTransJournalRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AxInterfaceCreateInvTransJournalResponse">
+    <wsdl:part name="parameters" element="tns:AxInterfaceCreateInvTransJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AxInterface_createInvTransJournal_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="AxInterface">
+    <wsdl:operation name="createFGRAFJournal">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createFGRAFJournal" name="AxInterfaceCreateFGRAFJournalRequest" message="tns:AxInterfaceCreateFGRAFJournalRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createFGRAFJournalResponse" name="AxInterfaceCreateFGRAFJournalResponse" message="tns:AxInterfaceCreateFGRAFJournalResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createFGRAFJournalAifFaultFault" name="AifFaultFault" message="tns:AxInterface_createFGRAFJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkCBDItem">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/checkCBDItem" name="AxInterfaceCheckCBDItemRequest" message="tns:AxInterfaceCheckCBDItemRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/checkCBDItemResponse" name="AxInterfaceCheckCBDItemResponse" message="tns:AxInterfaceCheckCBDItemResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/checkCBDItemAifFaultFault" name="AifFaultFault" message="tns:AxInterface_checkCBDItem_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="findOrCreate">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/findOrCreate" name="AxInterfaceFindOrCreateRequest" message="tns:AxInterfaceFindOrCreateRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/findOrCreateResponse" name="AxInterfaceFindOrCreateResponse" message="tns:AxInterfaceFindOrCreateResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/findOrCreateAifFaultFault" name="AifFaultFault" message="tns:AxInterface_findOrCreate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createBOMJournal">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createBOMJournal" name="AxInterfaceCreateBOMJournalRequest" message="tns:AxInterfaceCreateBOMJournalRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createBOMJournalResponse" name="AxInterfaceCreateBOMJournalResponse" message="tns:AxInterfaceCreateBOMJournalResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createBOMJournalAifFaultFault" name="AifFaultFault" message="tns:AxInterface_createBOMJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createInvMovJournal">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvMovJournal" name="AxInterfaceCreateInvMovJournalRequest" message="tns:AxInterfaceCreateInvMovJournalRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvMovJournalResponse" name="AxInterfaceCreateInvMovJournalResponse" message="tns:AxInterfaceCreateInvMovJournalResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvMovJournalAifFaultFault" name="AifFaultFault" message="tns:AxInterface_createInvMovJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createRAFJournal">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createRAFJournal" name="AxInterfaceCreateRAFJournalRequest" message="tns:AxInterfaceCreateRAFJournalRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createRAFJournalResponse" name="AxInterfaceCreateRAFJournalResponse" message="tns:AxInterfaceCreateRAFJournalResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createRAFJournalAifFaultFault" name="AifFaultFault" message="tns:AxInterface_createRAFJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createInvTransJournal">
+      <wsdl:input wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvTransJournal" name="AxInterfaceCreateInvTransJournalRequest" message="tns:AxInterfaceCreateInvTransJournalRequest" />
+      <wsdl:output wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvTransJournalResponse" name="AxInterfaceCreateInvTransJournalResponse" message="tns:AxInterfaceCreateInvTransJournalResponse" />
+      <wsdl:fault wsaw:Action="http://schemas.microsoft.com/dynamics/2008/01/services/AxInterface/createInvTransJournalAifFaultFault" name="AifFaultFault" message="tns:AxInterface_createInvTransJournal_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

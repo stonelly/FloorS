@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FSDBUAT">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=hsb-svr-0169-v;Initial Catalog=FloorSystemUAT</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>5ee68633-e62b-4af3-93ed-86d9cd30caf5</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED508A65-F474-43F2-A496-3499F3058BE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hartalega.FloorSystem.Business.Logic</RootNamespace>
+    <AssemblyName>Hartalega.FS.Business.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SIT|AnyCPU'">
+    <OutputPath>bin\SIT\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <OutputPath>bin\QA\</OutputPath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|AnyCPU'">
+    <OutputPath>bin\UAT\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\Production\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\Hartalega.FloorSystem.Windows.UI\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\ExternalDLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\ExternalDLL\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Publishing.Tasks">
+      <HintPath>..\ExternalDLL\Microsoft.Web.Publishing.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>..\ExternalDLL\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AX4PostingBLL.cs" />
+    <Compile Include="AXPostingBLL.cs" />
+    <Compile Include="Batch.cs" />
+    <Compile Include="BrandMasterBLL.cs" />
+    <Compile Include="CommonBLL.cs" />
+    <Compile Include="DataTransferObjects\AuditLogDTO.cs" />
+    <Compile Include="DataTransferObjects\AXPostingDTO.cs" />
+    <Compile Include="DataTransferObjects\BatchDTO.cs" />
+    <Compile Include="DataTransferObjects\MadeToStockDTO.cs" />
+    <Compile Include="DataTransferObjects\BatchOrderDetailsDTO.cs" />
+    <Compile Include="DataTransferObjects\BatchTypeMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\BinMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\BrandLineDTO.cs" />
+    <Compile Include="DataTransferObjects\BrandMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\ChangeLogDTO.cs" />
+    <Compile Include="DataTransferObjects\CustomerRejectDTO.cs" />
+    <Compile Include="DataTransferObjects\DefectiveGloveMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\DefectTypeDTO.cs" />
+    <Compile Include="DataTransferObjects\DowngradeBatchCardDTO.cs" />
+    <Compile Include="DataTransferObjects\DropdownDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerDetailsDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerProcessDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerProgramDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerScanBatchCardDTO.cs" />
+    <Compile Include="DataTransferObjects\DryerStoppageDTO.cs" />
+    <Compile Include="DataTransferObjects\EditQCEfficiencyDTO.cs" />
+    <Compile Include="DataTransferObjects\EventLogDTO.cs" />
+    <Compile Include="DataTransferObjects\FinalPackingTxnDTO.cs" />
+    <Compile Include="DataTransferObjects\FP_ExemptValidateDTO.cs" />
+    <Compile Include="DataTransferObjects\FP_TOMSValidateDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveBatchOrderDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveCodeDTO.cs" />
+    <Compile Include="DataTransferObjects\LineClearanceAuthoriseDTO.cs" />
+    <Compile Include="DataTransferObjects\LineClearanceLogDTO.cs" />
+    <Compile Include="DataTransferObjects\LotVerificationLogDTO.cs" />
+    <Compile Include="DataTransferObjects\ON2GBatchDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIEditOnlineBatchCardInfoDTO.cs" />
+    <Compile Include="DataTransferObjects\FinalPackingAXpostingDTO.cs" />
+    <Compile Include="DataTransferObjects\FinalPackingBatchInfoDTO.cs" />
+    <Compile Include="DataTransferObjects\FinalPackingDTO.cs" />
+    <Compile Include="DataTransferObjects\FPChangeBatchCardDTO.cs" />
+    <Compile Include="DataTransferObjects\FPReprintInner.cs" />
+    <Compile Include="DataTransferObjects\FPReprintOuter.cs" />
+    <Compile Include="DataTransferObjects\FPTempPackDTO.cs" />
+    <Compile Include="DataTransferObjects\GISDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveTypeSizeRelationMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveTypeMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveInquiryDetails.cs" />
+    <Compile Include="DataTransferObjects\GloveSizeDTO.cs" />
+    <Compile Include="DataTransferObjects\GloveSizeMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\InnerLabelDTO.cs" />
+    <Compile Include="DataTransferObjects\InnerLabelSetMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\LineDTO.cs" />
+    <Compile Include="DataTransferObjects\LineMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\LineSelectionDTO.cs" />
+    <Compile Include="DataTransferObjects\LineSelectionReprintDTO.cs" />
+    <Compile Include="DataTransferObjects\LocationDTO.cs" />
+    <Compile Include="DataTransferObjects\LocationMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\MessagesDTO.cs" />
+    <Compile Include="DataTransferObjects\OuterLabelDTO.cs" />
+    <Compile Include="DataTransferObjects\OuterLabelSetMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\PalletMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\PostTreatmentDTO.cs" />
+    <Compile Include="DataTransferObjects\PreshipmentSamplingPlanMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionDefectDetailDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionDefectDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionDefectMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionDefectSummaryDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionLineActivityDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionLineDetailsDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionLineDTO.cs" />
+    <Compile Include="DataTransferObjects\ProductionLoggingActivitiesDTO.cs" />
+    <Compile Include="DataTransferObjects\PurchaseOrderItemDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIAQReferenceFirstDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIDefectDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIDefectMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIMonitoringDTO.cs" />
+    <Compile Include="DataTransferObjects\QAIAQCosmeticReferenceSecondDTO.cs" />
+    <Compile Include="DataTransferObjects\QASystemDTO.cs" />
+    <Compile Include="DataTransferObjects\QCGroupDTO.cs" />
+    <Compile Include="DataTransferObjects\QCGroupStoppageDTO.cs" />
+    <Compile Include="DataTransferObjects\QCMemberDetailsDTO.cs" />
+    <Compile Include="DataTransferObjects\QCShiftDTO.cs" />
+    <Compile Include="DataTransferObjects\QCTypeMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\QCYieldandPackingDTO.cs" />
+    <Compile Include="DataTransferObjects\QITestResultAQLDTO.cs" />
+    <Compile Include="DataTransferObjects\QITestResultStatusDto.cs" />
+    <Compile Include="DataTransferObjects\ReasonDTO.cs" />
+    <Compile Include="DataTransferObjects\ReasonTypeDTO.cs" />
+    <Compile Include="DataTransferObjects\RePrintBatchCardDTO.cs" />
+    <Compile Include="DataTransferObjects\ResourceGroupDTO.cs" />
+    <Compile Include="DataTransferObjects\ShiftMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\SOLineDTO.cs" />
+    <Compile Include="DataTransferObjects\SurgicalFinalPackingDTO.cs" />
+    <Compile Include="DataTransferObjects\SurgicalPouchPrintingV2DTO.cs" />
+    <Compile Include="DataTransferObjects\SyncSalesConfirmJourDTO.cs" />
+    <Compile Include="DataTransferObjects\SyncSalesLineDTO.cs" />
+    <Compile Include="DataTransferObjects\SyncSalesTableDTO.cs" />
+    <Compile Include="DataTransferObjects\TenPcsDTO.cs" />
+    <Compile Include="DataTransferObjects\TenPcsWeightDTO.cs" />
+    <Compile Include="DataTransferObjects\TestSlipDTO.cs" />
+    <Compile Include="DataTransferObjects\TierSideMasterDTO.cs" />
+    <Compile Include="DataTransferObjects\WasherDTO.cs" />
+    <Compile Include="DataTransferObjects\WasherProcessDTO.cs" />
+    <Compile Include="DataTransferObjects\WasherProgramDTO.cs" />
+    <Compile Include="DataTransferObjects\WasherScanBatchCardDTO.cs" />
+    <Compile Include="DataTransferObjects\WasherStoppageDTO.cs" />
+    <Compile Include="DataTransferObjects\WIPReportDTO.cs" />
+    <Compile Include="DataTransferObjects\WIPTransactionDTO.cs" />
+    <Compile Include="DataTransferObjects\WorkOrderDTO.cs" />
+    <Compile Include="DataTransferObjects\WorkOrderSalesLineDTO.cs" />
+    <Compile Include="DataTransferObjects\WorkStationConfiguration.cs" />
+    <Compile Include="DataTransferObjects\WorkStationDTO.cs" />
+    <Compile Include="DataTransferObjects\APMLog.cs" />
+    <Compile Include="DataTransferObjects\ÁctivityTypeMasterDTO.cs" />
+    <Compile Include="DryerBLL.cs" />
+    <Compile Include="EventLog\EventLogDataField.cs" />
+    <Compile Include="EventLog\EventLogDataFieldContainer.cs" />
+    <Compile Include="EventLog\EventLogType.cs" />
+    <Compile Include="EventLog\ModuleAccessEventLogType.cs" />
+    <Compile Include="FinalPackingBLL.cs" />
+    <Compile Include="FinalPackingPrint.cs" />
+    <Compile Include="FSStagingBLL.cs" />
+    <Compile Include="GISBLL.cs" />
+    <Compile Include="DataTransferObjects\GloveCategoryMasterDTO.cs" />
+    <Compile Include="GloveCodeBLL.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="HourlyBatchCardBLL.cs" />
+    <Compile Include="MasterTableBLL.cs" />
+    <Compile Include="PostTreatmentBLL.cs" />
+    <Compile Include="PrintSticker.cs" />
+    <Compile Include="ProductionDefectBLL.cs" />
+    <Compile Include="ProductionLoggingBLL.cs" />
+    <Compile Include="ProductionSystemReportsBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSIReplacementDLL.cs" />
+    <Compile Include="QAIBLL.cs" />
+    <Compile Include="QASystemBLL.cs" />
+    <Compile Include="QcEfficiencyBll.cs" />
+    <Compile Include="QCPackingYieldBLL.cs" />
+    <Compile Include="QCScanningBLL.cs" />
+    <Compile Include="RunningNoBLL.cs" />
+    <Compile Include="SecurityModuleBLL.cs" />
+    <Compile Include="SendEmailBLL.cs" />
+    <Compile Include="SetUpConfigurationBLL.cs" />
+    <Compile Include="SurgicalGloveBLL.cs" />
+    <Compile Include="TumblingBLL.cs" />
+    <Compile Include="TVReportsBLL.cs" />
+    <Compile Include="WasherBLL.cs" />
+    <Compile Include="WIPStockCountBLL.cs" />
+    <Compile Include="WorkOrderBLL.cs" />
+    <Compile Include="WorkOrderSyncBLL.cs" />
+    <Compile Include="WSConfBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hartalega.FloorSystem.Framework\Hartalega.FloorSystem.Framework.csproj">
+      <Project>{c58265af-4f65-404a-acdc-cdf77b7c937a}</Project>
+      <Name>Hartalega.FloorSystem.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hartalega.FloorSystem.IntegrationServices\Hartalega.FloorSystem.IntegrationServices.csproj">
+      <Project>{9c5bcd75-b276-49c7-84b4-da84bfa5d74f}</Project>
+      <Name>Hartalega.FloorSystem.IntegrationServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <FullPath>Debug</FullPath>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>True</OverwriteDatasets>
+    <OverwriteDataSources>True</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>FloorSystem/Production System Report</TargetReportFolder>
+    <TargetDatasetFolder>DataSets</TargetDatasetFolder>
+    <TargetDatasourceFolder>FloorSystem</TargetDatasourceFolder>
+    <TargetServerURL>http://hsb-svr-0185-v.hartalega.local/Reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
+    <FullPath>DebugLocal</FullPath>
+    <OutputPath>bin\DebugLocal</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>ProductionSystemReport</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <FullPath>Release</FullPath>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>ProductionSystemReport</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup>
+    <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+U0FLPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+U0FLPC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPlNBSzwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+U0FLPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+    <DataSources>@(DataSource)</DataSources>
+    <DataSets>@(DataSet)</DataSets>
+    <Reports>@(Report)</Reports>
+  </PropertyGroup>
+  <ItemGroup>
+    <DataSource Include="FSDB.rds" />
+    <DataSource Include="FSDBUAT.rds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Report Include="2ndGradeOnHandDetails.rdl" />
+    <Report Include="Cosmetic Defect Report By Day.rdl" />
+    <Report Include="Cosmetic Defect Report Summary.rdl" />
+    <Report Include="Daily Detail QC Report.rdl" />
+    <Report Include="Daily QAI Defects Summary Status.rdl" />
+    <Report Include="DailybyLine.rdl" />
+    <Report Include="DailyDetailPacking.rdl" />
+    <Report Include="DPM Repor For Cut And Tears.rdl" />
+    <Report Include="DryerEfficiency.rdl" />
+    <Report Include="DryerYieldBatchDetail.rdl" />
+    <Report Include="FGTF Pallet Listing.rdl" />
+    <Report Include="Final Packing - Detail Packing.rdl" />
+    <Report Include="FinalPacking - PreshipmentCaseList.rdl" />
+    <Report Include="FinalPackingPreshipmentCaseList.rdl" />
+    <Report Include="GIS By LocationArea.rdl" />
+    <Report Include="MonthlyCapture.rdl" />
+    <Report Include="OutStandingSalesOrderReport.rdl" />
+    <Report Include="PlantbyDateRange.rdl" />
+    <Report Include="PlantbyMonthRange.rdl" />
+    <Report Include="PlantWidebyMonthRange.rdl" />
+    <Report Include="Post Treatment - Dryer - Efficiency report.rdl" />
+    <Report Include="Post Treatment - Rework Details Report.rdl" />
+    <Report Include="Post Treatment - Rework Reason Status Report.rdl" />
+    <Report Include="Post Treatment - Washer - Efficiency report.rdl" />
+    <Report Include="Production AX Posting Variance By Day Detail.rdl" />
+    <Report Include="Production AX Posting Variance By Day.rdl" />
+    <Report Include="Production Daily Detail Tumble.rdl" />
+    <Report Include="Production Daily FG status.rdl" />
+    <Report Include="Production Daily QAI Status SubReport.rdl" />
+    <Report Include="Production Daily QAI Status.rdl" />
+    <Report Include="Production Daily Status.rdl" />
+    <Report Include="Production DailyTenPcs Weight.rdl" />
+    <Report Include="Production Defect Report By Day.rdl" />
+    <Report Include="Production Defect Report Summary.rdl" />
+    <Report Include="Production QAI Testing Method By Employee.rdl" />
+    <Report Include="Production Summary Average Glove Weight.rdl" />
+    <Report Include="Production Summary QAI Status.rdl" />
+    <Report Include="Production Summary Status.rdl" />
+    <Report Include="PTReworkReasonStatus.rdl" />
+    <Report Include="QC Efficiency Detail.rdl" />
+    <Report Include="QC Status Report - Water Tight Status.rdl" />
+    <Report Include="QC Status Report for Daily and Monthly.rdl" />
+    <Report Include="QCDailyDetail.rdl" />
+    <Report Include="QCEfficiency.rdl" />
+    <Report Include="QCStatus_Daily_Monthy.rdl" />
+    <Report Include="rptDailyPQIDetailReport.rdl" />
+    <Report Include="rptDefectDetailReport.rdl" />
+    <Report Include="rptDefectDetailWithDefectSelectionReport.rdl" />
+    <Report Include="rptDefectSummaryReport.rdl" />
+    <Report Include="rptDetailPostTreatmentDailyReport.rdl" />
+    <Report Include="rptDryerStoppageReport.rdl" />
+    <Report Include="rptDryerYieldBatchReport.rdl" />
+    <Report Include="rptDryerYieldReport.rdl" />
+    <Report Include="rptEditQAIDefectReport.rdl" />
+    <Report Include="rptJPNonJPSalesCapacityReport.rdl" />
+    <Report Include="rptLotNumberListingReport.rdl" />
+    <Report Include="rptPostTreatmentStatusSummaryReport.rdl" />
+    <Report Include="rptQAIChangeQCTypeReport.rdl" />
+    <Report Include="rptQAIStatusReport.rdl" />
+    <Report Include="rptQAIStatusReportByGloveType.rdl" />
+    <Report Include="rptQAIStatusReportByLineAndGloveType.rdl" />
+    <Report Include="rptQCGroupDailyReport.rdl" />
+    <Report Include="rptWasherStoppageReport.rdl" />
+    <Report Include="rptWasherYieldBatchReport.rdl" />
+    <Report Include="rptWasherYieldReport.rdl" />
+    <Report Include="rptWIPReportByCutoffBatch.rdl" />
+    <Report Include="rptWIPReportByScanData.rdl" />
+    <Report Include="rptWIPSummaryReport.rdl" />
+    <Report Include="Traceability Batch By MTS PO.rdl" />
+    <Report Include="Traceability Batch By PO (MFG_EXP).rdl" />
+    <Report Include="Traceability Batch By PO (MICROFLEX Lot Number) .rdl" />
+    <Report Include="Traceability Batch By PO.rdl" />
+    <Report Include="Traceability Summary Glove Lot Number.rdl" />
+    <Report Include="WasherEfficiency.rdl" />
+    <Report Include="WasherYieldBatchDetail.rdl" />
+    <Report Include="WorkOrder Status Report.rdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
+</Project>

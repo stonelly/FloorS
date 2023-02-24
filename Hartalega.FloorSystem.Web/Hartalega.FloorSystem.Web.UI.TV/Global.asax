@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Hartalega.FloorSystem.Web.UI.TV.Global" Language="C#" %>

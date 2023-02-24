@@ -1,0 +1,2319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDF39172-870A-4CA2-92F1-70FC64C51E25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hartalega.FloorSystem.Windows.UI</RootNamespace>
+    <AssemblyName>FloorSystemUAT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\HSB-SVR-0293-V\FSInstallable\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <PublisherName>Hartalega</PublisherName>
+    <MinimumRequiredVersion>2.2023.0130.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.2023.0130.0</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WinApp\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\WinApp\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Hartalega.FloorSystem.Windows.UI.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9F05B80833331E621F4E178164ACBF1F725E8782</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Hartalega.FloorSystem.Windows.UI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HartalegaGlobe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <OutputPath>bin\QA\</OutputPath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SIT|AnyCPU'">
+    <OutputPath>bin\SIT\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|AnyCPU'">
+    <OutputPath>bin\UAT\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\Production\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Publishing.Tasks">
+      <HintPath>..\..\ExternalDLL\Microsoft.Web.Publishing.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>..\..\ExternalDLL\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrandMaster\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BatchEnq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BatchEnq.Designer.cs">
+      <DependentUpon>BatchEnq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HartalegaExtensionMethods.cs" />
+    <Compile Include="Common\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\DateControl.Designer.cs">
+      <DependentUpon>DateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MasterMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MasterMenu.Designer.cs">
+      <DependentUpon>MasterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PrinterClass.cs" />
+    <Compile Include="Common\ProcessingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ProcessingForm.Designer.cs">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SortableBindingList.cs" />
+    <Compile Include="Dryer\AddDryerProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dryer\AddDryerProcess.Designer.cs">
+      <DependentUpon>AddDryerProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dryer\DryerProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dryer\DryerProcess.Designer.cs">
+      <DependentUpon>DryerProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dryer\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dryer\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dryer\ScanBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dryer\ScanBatchCard.Designer.cs">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dryer\ScanStopTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dryer\ScanStopTime.Designer.cs">
+      <DependentUpon>ScanStopTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\BarcodeVerificationFail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\BarcodeVerificationFail.Designer.cs">
+      <DependentUpon>BarcodeVerificationFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\BarcodeVerificationPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\BarcodeVerificationPass.Designer.cs">
+      <DependentUpon>BarcodeVerificationPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ChangeBatchCardForInner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ChangeBatchCardForInner.Designer.cs">
+      <DependentUpon>ChangeBatchCardForInner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ChangeBatchCardForInnerV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ChangeBatchCardForInnerV2.Designer.cs">
+      <DependentUpon>ChangeBatchCardForInnerV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\CompletedPalletSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\CompletedPalletSlip.Designer.cs">
+      <DependentUpon>CompletedPalletSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\FGBatchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\FGBatchOrder.Designer.cs">
+      <DependentUpon>FGBatchOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\LineClearanceVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\LineClearanceVerification.Designer.cs">
+      <DependentUpon>LineClearanceVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ManualPalletReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ManualPalletReset.Designer.cs">
+      <DependentUpon>ManualPalletReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PalletCompletionSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PalletCompletionSlip.Designer.cs">
+      <DependentUpon>PalletCompletionSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PalletSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PalletSelection.Designer.cs">
+      <DependentUpon>PalletSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PHLotVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PHLotVerification.Designer.cs">
+      <DependentUpon>PHLotVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\Print2ndGradeInnerOuter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\Print2ndGradeInnerOuter.Designer.cs">
+      <DependentUpon>Print2ndGradeInnerOuter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuter.Designer.cs">
+      <DependentUpon>PrintSurgicalInnerOuter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuterV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuterV2.Designer.cs">
+      <DependentUpon>PrintSurgicalInnerOuterV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuterV3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\PrintSurgicalInnerOuterV3.Designer.cs">
+      <DependentUpon>PrintSurgicalInnerOuterV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\RePrint2ndGradeInner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\RePrint2ndGradeInner.Designer.cs">
+      <DependentUpon>RePrint2ndGradeInner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintInnerBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintInnerBox.Designer.cs">
+      <DependentUpon>ReprintInnerBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintInnerBoxMTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintInnerBoxMTS.Designer.cs">
+      <DependentUpon>ReprintInnerBoxMTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBox.Designer.cs">
+      <DependentUpon>ReprintOuterBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBoxByInternalLotNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBoxByInternalLotNo.Designer.cs">
+      <DependentUpon>ReprintOuterBoxByInternalLotNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBoxMTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterBoxMTS.Designer.cs">
+      <DependentUpon>ReprintOuterBoxMTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintOuterMenu.Designer.cs">
+      <DependentUpon>ReprintOuterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintSurgicalInner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ReprintSurgicalInner.Designer.cs">
+      <DependentUpon>ReprintSurgicalInner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ScanBatchCardInnerOuter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ScanBatchCardInnerOuter.Designer.cs">
+      <DependentUpon>ScanBatchCardInnerOuter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ScanBatchCardInnerOuterMTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ScanBatchCardInnerOuterMTS.Designer.cs">
+      <DependentUpon>ScanBatchCardInnerOuterMTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ScanMultipleBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ScanMultipleBatch.Designer.cs">
+      <DependentUpon>ScanMultipleBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ScanMultipleBatchMTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ScanMultipleBatchMTS.Designer.cs">
+      <DependentUpon>ScanMultipleBatchMTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\ScanTMPPackInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\ScanTMPPackInventory.Designer.cs">
+      <DependentUpon>ScanTMPPackInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\SurgicalPouchPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\SurgicalPouchPrinting.Designer.cs">
+      <DependentUpon>SurgicalPouchPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPacking\SurgicalPouchPrintingV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalPacking\SurgicalPouchPrintingV2.Designer.cs">
+      <DependentUpon>SurgicalPouchPrintingV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIS\GloveInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIS\GloveInquiry.designer.cs">
+      <DependentUpon>GloveInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIS\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIS\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIS\ScanIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIS\ScanIn.designer.cs">
+      <DependentUpon>ScanIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIS\ScanOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIS\ScanOut.designer.cs">
+      <DependentUpon>ScanOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\DryerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\DryerForm.Designer.cs">
+      <DependentUpon>DryerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\GloveAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\GloveAdd.Designer.cs">
+      <DependentUpon>GloveAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\QCTargetAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\QCTargetAssignment.designer.cs">
+      <DependentUpon>QCTargetAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\QcTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\QcTypeForm.Designer.cs">
+      <DependentUpon>QcTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\WasherDryerAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\WasherDryerAssignment.Designer.cs">
+      <DependentUpon>WasherDryerAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glove\WasherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glove\WasherForm.Designer.cs">
+      <DependentUpon>WasherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\BatchCardReprintLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\BatchCardReprintLog.designer.cs">
+      <DependentUpon>BatchCardReprintLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\GloveBatchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\GloveBatchOrder.Designer.cs">
+      <DependentUpon>GloveBatchOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\GloveOutputReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\GloveOutputReport.Designer.cs">
+      <DependentUpon>GloveOutputReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\Online2ndGradeGlove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\Online2ndGradeGlove.Designer.cs">
+      <DependentUpon>Online2ndGradeGlove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\ReprintHBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\ReprintHBC.designer.cs">
+      <DependentUpon>ReprintHBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HourlyBatchCard\ReprintON2GBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourlyBatchCard\ReprintON2GBatchCard.Designer.cs">
+      <DependentUpon>ReprintON2GBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OEE\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OEE\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostTreatment\ChangeGloveType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostTreatment\ChangeGloveType.Designer.cs">
+      <DependentUpon>ChangeGloveType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostTreatment\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostTreatment\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostTreatment\PrintTestSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostTreatment\PrintTestSlip.Designer.cs">
+      <DependentUpon>PrintTestSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostTreatment\ScanPolymerTestResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostTreatment\ScanPolymerTestResult.Designer.cs">
+      <DependentUpon>ScanPolymerTestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostTreatment\ScanPTBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostTreatment\ScanPTBatchCard.Designer.cs">
+      <DependentUpon>ScanPTBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production System Reports\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production System Reports\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production System Reports\ReportsSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production System Reports\ReportsSubMenu.Designer.cs">
+      <DependentUpon>ReportsSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production System Reports\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production System Reports\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDefect\AddEditDefect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionDefect\AddEditDefect.Designer.cs">
+      <DependentUpon>AddEditDefect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDefect\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionDefect\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDefect\Maintainence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionDefect\Maintainence.Designer.cs">
+      <DependentUpon>Maintainence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\EditProductionLineStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\EditProductionLineStart.Designer.cs">
+      <DependentUpon>EditProductionLineStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\EditProductionLineStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\EditProductionLineStop.Designer.cs">
+      <DependentUpon>EditProductionLineStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\LineControlMaintainence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\LineControlMaintainence.Designer.cs">
+      <DependentUpon>LineControlMaintainence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\ProdActivityAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\ProdActivityAdd.designer.cs">
+      <DependentUpon>ProdActivityAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionActivity.designer.cs">
+      <DependentUpon>ProductionActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStart.Designer.cs">
+      <DependentUpon>ProductionLineStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStartStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStartStop.Designer.cs">
+      <DependentUpon>ProductionLineStartStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\ProductionLineStop.Designer.cs">
+      <DependentUpon>ProductionLineStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionLogging\SpeedControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionLogging\SpeedControl.Designer.cs">
+      <DependentUpon>SpeedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\DefectSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\DefectSummary.Designer.cs">
+      <DependentUpon>DefectSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\EditDefects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\EditDefects.designer.cs">
+      <DependentUpon>EditDefects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIChangeQCType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIChangeQCType.designer.cs">
+      <DependentUpon>QAIChangeQCType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIResamplingScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIResamplingScan.designer.cs">
+      <DependentUpon>QAIResamplingScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIScanDefect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIScanDefect.designer.cs">
+      <DependentUpon>QAIScanDefect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\EditOnlineBatchCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\EditOnlineBatchCardInfo.designer.cs">
+      <DependentUpon>EditOnlineBatchCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIScanDefectPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIScanDefectPosition.designer.cs">
+      <DependentUpon>QAIScanDefectPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIScanInnerTenPcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIScanInnerTenPcs.designer.cs">
+      <DependentUpon>QAIScanInnerTenPcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\QAIScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\QAIScan.designer.cs">
+      <DependentUpon>QAIScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QAI\ScanQITestResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QAI\ScanQITestResult.designer.cs">
+      <DependentUpon>ScanQITestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QASystem\AddTestRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QASystem\AddTestRecord.Designer.cs">
+      <DependentUpon>AddTestRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QASystem\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QASystem\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCEfficiencyData\EditQCEfficiency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCEfficiencyData\EditQCEfficiency.Designer.cs">
+      <DependentUpon>EditQCEfficiency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanBatchCardPieces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanBatchCardPieces.Designer.cs">
+      <DependentUpon>ScanBatchCardPieces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInBatchCardExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInBatchCardExtend.Designer.cs">
+      <DependentUpon>ScanInBatchCardExtend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInBatchCard.Designer.cs">
+      <DependentUpon>ScanInBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInQCPackingGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanInQCPackingGroup.Designer.cs">
+      <DependentUpon>ScanInQCPackingGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanOutQCPackingGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCPackingYieldSystem\ScanOutQCPackingGroup.Designer.cs">
+      <DependentUpon>ScanOutQCPackingGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\DefectiveGlovePlatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\DefectiveGlovePlatform.Designer.cs">
+      <DependentUpon>DefectiveGlovePlatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\DowngradeBatchCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\DowngradeBatchCards.Designer.cs">
+      <DependentUpon>DowngradeBatchCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\PrintSecondGradeSticker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\PrintSecondGradeSticker.Designer.cs">
+      <DependentUpon>PrintSecondGradeSticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\RejectGlove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\RejectGlove.Designer.cs">
+      <DependentUpon>RejectGlove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\ScanBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\ScanBatchCard.Designer.cs">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\ScanBatchCardWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\ScanBatchCardWeight.Designer.cs">
+      <DependentUpon>ScanBatchCardWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QCScanning\SecondGradeStockVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCScanning\SecondGradeStockVerification.Designer.cs">
+      <DependentUpon>SecondGradeStockVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditOperatorScreenAccessMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditOperatorScreenAccessMaster.Designer.cs">
+      <DependentUpon>AddEditOperatorScreenAccessMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditPageMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditPageMaster.Designer.cs">
+      <DependentUpon>AddEditPageMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditPermissionMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditPermissionMaster.Designer.cs">
+      <DependentUpon>AddEditPermissionMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditRoleModulePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\AddEditRoleModulePermission.Designer.cs">
+      <DependentUpon>AddEditRoleModulePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\EditEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\EditEmployeeDetails.Designer.cs">
+      <DependentUpon>EditEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\EmployeeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\EmployeeMaster.Designer.cs">
+      <DependentUpon>EmployeeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\IChangeNotification .cs" />
+    <Compile Include="SecurityModule\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\OperatorScreenAccessMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\OperatorScreenAccessMaster.Designer.cs">
+      <DependentUpon>OperatorScreenAccessMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\PageMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\PageMaster.Designer.cs">
+      <DependentUpon>PageMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\PermissionMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\PermissionMaster.Designer.cs">
+      <DependentUpon>PermissionMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityModule\RoleMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityModule\RoleMaintenance.Designer.cs">
+      <DependentUpon>RoleMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ActivityTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ActivityTypeMaster.Designer.cs">
+      <DependentUpon>ActivityTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddDryerProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddDryerProcess.Designer.cs">
+      <DependentUpon>AddDryerProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddDryerStoppageData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddDryerStoppageData.Designer.cs">
+      <DependentUpon>AddDryerStoppageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefect.Designer.cs">
+      <DependentUpon>AddOrEditQAIDefect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddGloveType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddGloveType.Designer.cs">
+      <DependentUpon>AddGloveType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefectCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefectCategory.Designer.cs">
+      <DependentUpon>AddOrEditQAIDefectCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefectPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQAIDefectPosition.Designer.cs">
+      <DependentUpon>AddOrEditQAIDefectPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQCGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddOrEditQCGroup.Designer.cs">
+      <DependentUpon>AddOrEditQCGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddorEditReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddorEditReason.Designer.cs">
+      <DependentUpon>AddorEditReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddQCGroupStoppageData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddQCGroupStoppageData.Designer.cs">
+      <DependentUpon>AddQCGroupStoppageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherProgram.Designer.cs">
+      <DependentUpon>AddWasherProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherStage.Designer.cs">
+      <DependentUpon>AddWasherStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherStoppageData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\AddWasherStoppageData.Designer.cs">
+      <DependentUpon>AddWasherStoppageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BatchInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BatchInquiry.Designer.cs">
+      <DependentUpon>BatchInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BatchTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BatchTypeMaster.Designer.cs">
+      <DependentUpon>BatchTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BinMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\BinMaster.Designer.cs">
+      <DependentUpon>BinMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterPreshipmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterPreshipmentEdit.Designer.cs">
+      <DependentUpon>BrandMasterPreshipmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterPreshipmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterPreshipmentList.Designer.cs">
+      <DependentUpon>BrandMasterPreshipmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterWarehouseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterWarehouseEdit.Designer.cs">
+      <DependentUpon>BrandMasterWarehouseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterWarehouseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterWarehouseList.Designer.cs">
+      <DependentUpon>BrandMasterWarehouseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DatePicker.Designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DefectiveGlove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DefectiveGlove.Designer.cs">
+      <DependentUpon>DefectiveGlove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerMaster.Designer.cs">
+      <DependentUpon>DryerMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerMasterTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerMasterTable.Designer.cs">
+      <DependentUpon>DryerMasterTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerProcess.Designer.cs">
+      <DependentUpon>DryerProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerStoppageData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\DryerStoppageData.Designer.cs">
+      <DependentUpon>DryerStoppageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditDryerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditDryerDetails.Designer.cs">
+      <DependentUpon>EditDryerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditGloveType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditGloveType.Designer.cs">
+      <DependentUpon>EditGloveType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditLineRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditLineRecord.Designer.cs">
+      <DependentUpon>EditLineRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditReason.Designer.cs">
+      <DependentUpon>EditReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditWasherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\EditWasherDetails.Designer.cs">
+      <DependentUpon>EditWasherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveCategoryMaster.Designer.cs">
+      <DependentUpon>GloveCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveSizeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveSizeMaster.Designer.cs">
+      <DependentUpon>GloveSizeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\InnerLabelSetMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\InnerLabelSetMaster.Designer.cs">
+      <DependentUpon>InnerLabelSetMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LineClearanceAuthoriseSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LineClearanceAuthoriseSetup.Designer.cs">
+      <DependentUpon>LineClearanceAuthoriseSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LineMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LineMaster.designer.cs">
+      <DependentUpon>LineMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LocationMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\LocationMaster.Designer.cs">
+      <DependentUpon>LocationMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MasterTableMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MasterTableMainMenu.Designer.cs">
+      <DependentUpon>MasterTableMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MessageMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\MessageMaster.Designer.cs">
+      <DependentUpon>MessageMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\OuterLabelSetMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\OuterLabelSetMaster.Designer.cs">
+      <DependentUpon>OuterLabelSetMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\PalletMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\PalletMaster.Designer.cs">
+      <DependentUpon>PalletMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\PreshipmentSamplingPlanMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\PreshipmentSamplingPlanMaster.Designer.cs">
+      <DependentUpon>PreshipmentSamplingPlanMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ProductionDefectMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ProductionDefectMaster.designer.cs">
+      <DependentUpon>ProductionDefectMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ProductionLineMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ProductionLineMaintenance.Designer.cs">
+      <DependentUpon>ProductionLineMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIAQCosmeticReferenceSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIAQCosmeticReferenceSecond.designer.cs">
+      <DependentUpon>QAIAQCosmeticReferenceSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIAQReferenceFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIAQReferenceFirst.designer.cs">
+      <DependentUpon>QAIAQReferenceFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\GloveTypeMaster.Designer.cs">
+      <DependentUpon>GloveTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIDefectMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QAIDefectMaster.Designer.cs">
+      <DependentUpon>QAIDefectMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QCGroupMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QCGroupMaster.Designer.cs">
+      <DependentUpon>QCGroupMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QCTypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QCTypeMaster.Designer.cs">
+      <DependentUpon>QCTypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QITestResultAQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\QITestResultAQL.designer.cs">
+      <DependentUpon>QITestResultAQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ReasonMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ReasonMaster.Designer.cs">
+      <DependentUpon>ReasonMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ShiftMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\ShiftMaster.Designer.cs">
+      <DependentUpon>ShiftMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherMaster.Designer.cs">
+      <DependentUpon>WasherMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherMasterTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherMasterTable.Designer.cs">
+      <DependentUpon>WasherMasterTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherProcess.Designer.cs">
+      <DependentUpon>WasherProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherStoppageData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WasherStoppageData.Designer.cs">
+      <DependentUpon>WasherStoppageData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterMaintenanceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterMaintenanceList.Designer.cs">
+      <DependentUpon>BrandMasterMaintenanceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterMaintenanceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandMaster\BrandMasterMaintenanceEdit.Designer.cs">
+      <DependentUpon>BrandMasterMaintenanceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkStationConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkStationConfiguration.Designer.cs">
+      <DependentUpon>WorkStationConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkStationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkStationDetails.Designer.cs">
+      <DependentUpon>WorkStationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkstationMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpConfiguration\WorkstationMaster.Designer.cs">
+      <DependentUpon>WorkstationMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\BatchCardReprintLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\BatchCardReprintLog.designer.cs">
+      <DependentUpon>BatchCardReprintLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\GloveBatchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\GloveBatchOrder.Designer.cs">
+      <DependentUpon>GloveBatchOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\PrintSurgicalBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\PrintSurgicalBatchCard.Designer.cs">
+      <DependentUpon>PrintSurgicalBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\ReprintSRBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgicalGloveSystem\ReprintSRBC.designer.cs">
+      <DependentUpon>ReprintSRBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeStamp.cs" />
+    <Compile Include="Tumbling\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\OnlineByPassGloveBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\OnlineByPassGloveBatchCard.Designer.cs">
+      <DependentUpon>OnlineByPassGloveBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintCustomerRejectGloveBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintCustomerRejectGloveBatchCard.Designer.cs">
+      <DependentUpon>PrintCustomerRejectGloveBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintNormalBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintNormalBatchCard.designer.cs">
+      <DependentUpon>PrintNormalBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintPolymerTestSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintPolymerTestSlip.Designer.cs">
+      <DependentUpon>PrintPolymerTestSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintReproductionVisualTestBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintReproductionVisualTestBatchCard.Designer.cs">
+      <DependentUpon>PrintReproductionVisualTestBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintReproductionWaterTightBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintReproductionWaterTightBatchCard.Designer.cs">
+      <DependentUpon>PrintReproductionWaterTightBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintVisualTestBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintVisualTestBatchCard.Designer.cs">
+      <DependentUpon>PrintVisualTestBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintWaterTightBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintWaterTightBatchCard.Designer.cs">
+      <DependentUpon>PrintWaterTightBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\PrintLostBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\PrintLostBatchCard.Designer.cs">
+      <DependentUpon>PrintLostBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\OnlineRejectGlove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\OnlineRejectGlove.Designer.cs">
+      <DependentUpon>OnlineRejectGlove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\RejectGlove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\RejectGlove.Designer.cs">
+      <DependentUpon>RejectGlove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tumbling\ReprintBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tumbling\ReprintBatchCard.designer.cs">
+      <DependentUpon>ReprintBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TVReports\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TVReports\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\AddWasherProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\AddWasherProgram.Designer.cs">
+      <DependentUpon>AddWasherProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\AddWasherStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\AddWasherStage.Designer.cs">
+      <DependentUpon>AddWasherStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\ScanBatchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\ScanBatchCard.Designer.cs">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\ScanStopTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\ScanStopTime.Designer.cs">
+      <DependentUpon>ScanStopTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Washer\WasherProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Washer\WasherProcess.Designer.cs">
+      <DependentUpon>WasherProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportByCutoffBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportByCutoffBatch.Designer.cs">
+      <DependentUpon>WIPReportByCutoffBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportByScanData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportByScanData.Designer.cs">
+      <DependentUpon>WIPReportByScanData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPReportsMenu.Designer.cs">
+      <DependentUpon>WIPReportsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPSummaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPSummaryReport.Designer.cs">
+      <DependentUpon>WIPSummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPVoidScannedTxn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIPStockCount\WIPVoidScannedTxn.Designer.cs">
+      <DependentUpon>WIPVoidScannedTxn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\CheckComboBoxTest\CCBoxItem.cs" />
+    <Compile Include="WorkOrder\CheckComboBoxTest\CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderStatusView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderStatusView.Designer.cs">
+      <DependentUpon>WorkOrderStatusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderStatusList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderStatusList.Designer.cs">
+      <DependentUpon>WorkOrderStatusList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderMaintenanceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderMaintenanceList.Designer.cs">
+      <DependentUpon>WorkOrderMaintenanceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderMaintenanceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrderMaintenanceEdit.Designer.cs">
+      <DependentUpon>WorkOrderMaintenanceEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BrandMaster\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BatchEnq.resx">
+      <DependentUpon>BatchEnq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateControl.resx">
+      <DependentUpon>DateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MasterMenu.resx">
+      <DependentUpon>MasterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ProcessingForm.resx">
+      <DependentUpon>ProcessingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dryer\AddDryerProcess.resx">
+      <DependentUpon>AddDryerProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dryer\DryerProcess.resx">
+      <DependentUpon>DryerProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dryer\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dryer\ScanBatchCard.resx">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dryer\ScanStopTime.resx">
+      <DependentUpon>ScanStopTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\BarcodeVerificationFail.resx">
+      <DependentUpon>BarcodeVerificationFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\BarcodeVerificationPass.resx">
+      <DependentUpon>BarcodeVerificationPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ChangeBatchCardForInner.resx">
+      <DependentUpon>ChangeBatchCardForInner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ChangeBatchCardForInnerV2.resx">
+      <DependentUpon>ChangeBatchCardForInnerV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\CompletedPalletSlip.resx">
+      <DependentUpon>CompletedPalletSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\FGBatchOrder.resx">
+      <DependentUpon>FGBatchOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\LineClearanceVerification.resx">
+      <DependentUpon>LineClearanceVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ManualPalletReset.resx">
+      <DependentUpon>ManualPalletReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PalletCompletionSlip.resx">
+      <DependentUpon>PalletCompletionSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PalletSelection.resx">
+      <DependentUpon>PalletSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PHLotVerification.resx">
+      <DependentUpon>PHLotVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\Print2ndGradeInnerOuter.resx">
+      <DependentUpon>Print2ndGradeInnerOuter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PrintSurgicalInnerOuter.resx">
+      <DependentUpon>PrintSurgicalInnerOuter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PrintSurgicalInnerOuterV2.resx">
+      <DependentUpon>PrintSurgicalInnerOuterV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\PrintSurgicalInnerOuterV3.resx">
+      <DependentUpon>PrintSurgicalInnerOuterV3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\RePrint2ndGradeInner.resx">
+      <DependentUpon>RePrint2ndGradeInner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintInnerBox.resx">
+      <DependentUpon>ReprintInnerBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintInnerBoxMTS.resx">
+      <DependentUpon>ReprintInnerBoxMTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintOuterBox.resx">
+      <DependentUpon>ReprintOuterBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintOuterBoxByInternalLotNo.resx">
+      <DependentUpon>ReprintOuterBoxByInternalLotNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintOuterBoxMTS.resx">
+      <DependentUpon>ReprintOuterBoxMTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintOuterMenu.resx">
+      <DependentUpon>ReprintOuterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ReprintSurgicalInner.resx">
+      <DependentUpon>ReprintSurgicalInner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ScanBatchCardInnerOuter.resx">
+      <DependentUpon>ScanBatchCardInnerOuter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ScanBatchCardInnerOuterMTS.resx">
+      <DependentUpon>ScanBatchCardInnerOuterMTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ScanMultipleBatch.resx">
+      <DependentUpon>ScanMultipleBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ScanMultipleBatchMTS.resx">
+      <DependentUpon>ScanMultipleBatchMTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\ScanTMPPackInventory.resx">
+      <DependentUpon>ScanTMPPackInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\SurgicalPouchPrinting.resx">
+      <DependentUpon>SurgicalPouchPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalPacking\SurgicalPouchPrintingV2.resx">
+      <DependentUpon>SurgicalPouchPrintingV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIS\GloveInquiry.resx">
+      <DependentUpon>GloveInquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIS\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIS\ScanIn.resx">
+      <DependentUpon>ScanIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIS\ScanOut.resx">
+      <DependentUpon>ScanOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\DryerForm.resx">
+      <DependentUpon>DryerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\GloveAdd.resx">
+      <DependentUpon>GloveAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\QCTargetAssignment.resx">
+      <DependentUpon>QCTargetAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\QcTypeForm.resx">
+      <DependentUpon>QcTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\WasherDryerAssignment.resx">
+      <DependentUpon>WasherDryerAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glove\WasherForm.resx">
+      <DependentUpon>WasherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\BatchCardReprintLog.resx">
+      <DependentUpon>BatchCardReprintLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\GloveBatchOrder.resx">
+      <DependentUpon>GloveBatchOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\GloveOutputReport.resx">
+      <DependentUpon>GloveOutputReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\Online2ndGradeGlove.resx">
+      <DependentUpon>Online2ndGradeGlove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\ReprintHBC.resx">
+      <DependentUpon>ReprintHBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HourlyBatchCard\ReprintON2GBatchCard.resx">
+      <DependentUpon>ReprintON2GBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OEE\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostTreatment\ChangeGloveType.resx">
+      <DependentUpon>ChangeGloveType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostTreatment\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostTreatment\PrintTestSlip.resx">
+      <DependentUpon>PrintTestSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostTreatment\ScanPolymerTestResult.resx">
+      <DependentUpon>ScanPolymerTestResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostTreatment\ScanPTBatchCard.resx">
+      <DependentUpon>ScanPTBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production System Reports\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production System Reports\ReportsSubMenu.resx">
+      <DependentUpon>ReportsSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production System Reports\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDefect\AddEditDefect.resx">
+      <DependentUpon>AddEditDefect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDefect\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDefect\Maintainence.resx">
+      <DependentUpon>Maintainence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\EditProductionLineStart.resx">
+      <DependentUpon>EditProductionLineStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\EditProductionLineStop.resx">
+      <DependentUpon>EditProductionLineStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\LineControlMaintainence.resx">
+      <DependentUpon>LineControlMaintainence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\ProdActivityAdd.resx">
+      <DependentUpon>ProdActivityAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\ProductionActivity.resx">
+      <DependentUpon>ProductionActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\ProductionLineStart.resx">
+      <DependentUpon>ProductionLineStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\ProductionLineStartStop.resx">
+      <DependentUpon>ProductionLineStartStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\ProductionLineStop.resx">
+      <DependentUpon>ProductionLineStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLogging\SpeedControl.resx">
+      <DependentUpon>SpeedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\DefectSummary.resx">
+      <DependentUpon>DefectSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\EditDefects.resx">
+      <DependentUpon>EditDefects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIChangeQCType.resx">
+      <DependentUpon>QAIChangeQCType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIResamplingScan.resx">
+      <DependentUpon>QAIResamplingScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIScanDefect.resx">
+      <DependentUpon>QAIScanDefect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\EditOnlineBatchCardInfo.resx">
+      <DependentUpon>EditOnlineBatchCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIScanDefectPosition.resx">
+      <DependentUpon>QAIScanDefectPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIScanInnerTenPcs.resx">
+      <DependentUpon>QAIScanInnerTenPcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\QAIScan.resx">
+      <DependentUpon>QAIScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QAI\ScanQITestResult.resx">
+      <DependentUpon>ScanQITestResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QASystem\AddTestRecord.resx">
+      <DependentUpon>AddTestRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QASystem\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCEfficiencyData\EditQCEfficiency.resx">
+      <DependentUpon>EditQCEfficiency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\ScanBatchCardPieces.resx">
+      <DependentUpon>ScanBatchCardPieces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\ScanInBatchCardExtend.resx">
+      <DependentUpon>ScanInBatchCardExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\ScanInBatchCard.resx">
+      <DependentUpon>ScanInBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\ScanInQCPackingGroup.resx">
+      <DependentUpon>ScanInQCPackingGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCPackingYieldSystem\ScanOutQCPackingGroup.resx">
+      <DependentUpon>ScanOutQCPackingGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\DefectiveGlovePlatform.resx">
+      <DependentUpon>DefectiveGlovePlatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\DowngradeBatchCards.resx">
+      <DependentUpon>DowngradeBatchCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\PrintSecondGradeSticker.resx">
+      <DependentUpon>PrintSecondGradeSticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\RejectGlove.resx">
+      <DependentUpon>RejectGlove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\ScanBatchCard.resx">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\ScanBatchCardWeight.resx">
+      <DependentUpon>ScanBatchCardWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCScanning\SecondGradeStockVerification.resx">
+      <DependentUpon>SecondGradeStockVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\AddEditOperatorScreenAccessMaster.resx">
+      <DependentUpon>AddEditOperatorScreenAccessMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\AddEditPageMaster.resx">
+      <DependentUpon>AddEditPageMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\AddEditPermissionMaster.resx">
+      <DependentUpon>AddEditPermissionMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\AddEditRoleModulePermission.resx">
+      <DependentUpon>AddEditRoleModulePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\EditEmployeeDetails.resx">
+      <DependentUpon>EditEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\EmployeeMaster.resx">
+      <DependentUpon>EmployeeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\OperatorScreenAccessMaster.resx">
+      <DependentUpon>OperatorScreenAccessMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\PageMaster.resx">
+      <DependentUpon>PageMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\PermissionMaster.resx">
+      <DependentUpon>PermissionMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityModule\RoleMaintenance.resx">
+      <DependentUpon>RoleMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\ActivityTypeMaster.resx">
+      <DependentUpon>ActivityTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddDryerProcess.resx">
+      <DependentUpon>AddDryerProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddDryerStoppageData.resx">
+      <DependentUpon>AddDryerStoppageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddOrEditQAIDefect.resx">
+      <DependentUpon>AddOrEditQAIDefect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddGloveType.resx">
+      <DependentUpon>AddGloveType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddOrEditQAIDefectCategory.resx">
+      <DependentUpon>AddOrEditQAIDefectCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddOrEditQAIDefectPosition.resx">
+      <DependentUpon>AddOrEditQAIDefectPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddOrEditQCGroup.resx">
+      <DependentUpon>AddOrEditQCGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddorEditReason.resx">
+      <DependentUpon>AddorEditReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddQCGroupStoppageData.resx">
+      <DependentUpon>AddQCGroupStoppageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddWasherProgram.resx">
+      <DependentUpon>AddWasherProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddWasherStage.resx">
+      <DependentUpon>AddWasherStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\AddWasherStoppageData.resx">
+      <DependentUpon>AddWasherStoppageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\BatchInquiry.resx">
+      <DependentUpon>BatchInquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\BatchTypeMaster.resx">
+      <DependentUpon>BatchTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\BinMaster.resx">
+      <DependentUpon>BinMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterPreshipmentEdit.resx">
+      <DependentUpon>BrandMasterPreshipmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterPreshipmentList.resx">
+      <DependentUpon>BrandMasterPreshipmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterWarehouseEdit.resx">
+      <DependentUpon>BrandMasterWarehouseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterWarehouseList.resx">
+      <DependentUpon>BrandMasterWarehouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DatePicker.resx">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DefectiveGlove.resx">
+      <DependentUpon>DefectiveGlove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DryerMaster.resx">
+      <DependentUpon>DryerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DryerMasterTable.resx">
+      <DependentUpon>DryerMasterTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DryerProcess.resx">
+      <DependentUpon>DryerProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\DryerStoppageData.resx">
+      <DependentUpon>DryerStoppageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\EditDryerDetails.resx">
+      <DependentUpon>EditDryerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\EditGloveType.resx">
+      <DependentUpon>EditGloveType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\EditLineRecord.resx">
+      <DependentUpon>EditLineRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\EditReason.resx">
+      <DependentUpon>EditReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\EditWasherDetails.resx">
+      <DependentUpon>EditWasherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\GloveCategoryMaster.resx">
+      <DependentUpon>GloveCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\GloveSizeMaster.resx">
+      <DependentUpon>GloveSizeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\InnerLabelSetMaster.resx">
+      <DependentUpon>InnerLabelSetMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\LineClearanceAuthoriseSetup.resx">
+      <DependentUpon>LineClearanceAuthoriseSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\LineMaster.resx">
+      <DependentUpon>LineMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\LocationMaster.resx">
+      <DependentUpon>LocationMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\MasterTableMainMenu.resx">
+      <DependentUpon>MasterTableMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\MessageMaster.resx">
+      <DependentUpon>MessageMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\OuterLabelSetMaster.resx">
+      <DependentUpon>OuterLabelSetMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\PalletMaster.resx">
+      <DependentUpon>PalletMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\PreshipmentSamplingPlanMaster.resx">
+      <DependentUpon>PreshipmentSamplingPlanMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\ProductionDefectMaster.resx">
+      <DependentUpon>ProductionDefectMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\ProductionLineMaintenance.resx">
+      <DependentUpon>ProductionLineMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QAIAQCosmeticReferenceSecond.resx">
+      <DependentUpon>QAIAQCosmeticReferenceSecond.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QAIAQReferenceFirst.resx">
+      <DependentUpon>QAIAQReferenceFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\GloveTypeMaster.resx">
+      <DependentUpon>GloveTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QAIDefectMaster.resx">
+      <DependentUpon>QAIDefectMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QCGroupMaster.resx">
+      <DependentUpon>QCGroupMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QCTypeMaster.resx">
+      <DependentUpon>QCTypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\QITestResultAQL.resx">
+      <DependentUpon>QITestResultAQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\ReasonMaster.resx">
+      <DependentUpon>ReasonMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\ShiftMaster.resx">
+      <DependentUpon>ShiftMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WasherMaster.resx">
+      <DependentUpon>WasherMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WasherMasterTable.resx">
+      <DependentUpon>WasherMasterTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WasherProcess.resx">
+      <DependentUpon>WasherProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WasherStoppageData.resx">
+      <DependentUpon>WasherStoppageData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterMaintenanceList.resx">
+      <DependentUpon>BrandMasterMaintenanceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandMaster\BrandMasterMaintenanceEdit.resx">
+      <DependentUpon>BrandMasterMaintenanceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WorkStationConfiguration.resx">
+      <DependentUpon>WorkStationConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WorkStationDetails.resx">
+      <DependentUpon>WorkStationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpConfiguration\WorkstationMaster.resx">
+      <DependentUpon>WorkstationMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalGloveSystem\BatchCardReprintLog.resx">
+      <DependentUpon>BatchCardReprintLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalGloveSystem\GloveBatchOrder.resx">
+      <DependentUpon>GloveBatchOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalGloveSystem\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalGloveSystem\PrintSurgicalBatchCard.resx">
+      <DependentUpon>PrintSurgicalBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgicalGloveSystem\ReprintSRBC.resx">
+      <DependentUpon>ReprintSRBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\OnlineByPassGloveBatchCard.resx">
+      <DependentUpon>OnlineByPassGloveBatchCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintCustomerRejectGloveBatchCard.resx">
+      <DependentUpon>PrintCustomerRejectGloveBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintLostBatchCard.resx">
+      <DependentUpon>PrintLostBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintNormalBatchCard.resx">
+      <DependentUpon>PrintNormalBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintPolymerTestSlip.resx">
+      <DependentUpon>PrintPolymerTestSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintReproductionVisualTestBatchCard.resx">
+      <DependentUpon>PrintReproductionVisualTestBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintReproductionWaterTightBatchCard.resx">
+      <DependentUpon>PrintReproductionWaterTightBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintVisualTestBatchCard.resx">
+      <DependentUpon>PrintVisualTestBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\PrintWaterTightBatchCard.resx">
+      <DependentUpon>PrintWaterTightBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\OnlineRejectGlove.resx">
+      <DependentUpon>OnlineRejectGlove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\RejectGlove.resx">
+      <DependentUpon>RejectGlove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tumbling\ReprintBatchCard.resx">
+      <DependentUpon>ReprintBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TVReports\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\AddWasherProgram.resx">
+      <DependentUpon>AddWasherProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\AddWasherStage.resx">
+      <DependentUpon>AddWasherStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\ScanBatchCard.resx">
+      <DependentUpon>ScanBatchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\ScanStopTime.resx">
+      <DependentUpon>ScanStopTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Washer\WasherProcess.resx">
+      <DependentUpon>WasherProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\WIPReportByCutoffBatch.resx">
+      <DependentUpon>WIPReportByCutoffBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\WIPReportByScanData.resx">
+      <DependentUpon>WIPReportByScanData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\WIPReportsMenu.resx">
+      <DependentUpon>WIPReportsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\WIPSummaryReport.resx">
+      <DependentUpon>WIPSummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIPStockCount\WIPVoidScannedTxn.resx">
+      <DependentUpon>WIPVoidScannedTxn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder\WorkOrderStatusView.resx">
+      <DependentUpon>WorkOrderStatusView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder\WorkOrderStatusList.resx">
+      <DependentUpon>WorkOrderStatusList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder\WorkOrderMaintenanceList.resx">
+      <DependentUpon>WorkOrderMaintenanceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrder\WorkOrderMaintenanceEdit.resx">
+      <DependentUpon>WorkOrderMaintenanceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Production.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.QA.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.SIT.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.UAT.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Engine\setup.bin" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Hartalega.FloorSystem.Business.Logic\Hartalega.FloorSystem.Business.Logic.csproj">
+      <Project>{ed508a65-f474-43f2-a496-3499f3058be1}</Project>
+      <Name>Hartalega.FloorSystem.Business.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Hartalega.FloorSystem.Framework\Hartalega.FloorSystem.Framework.csproj">
+      <Project>{c58265af-4f65-404a-acdc-cdf77b7c937a}</Project>
+      <Name>Hartalega.FloorSystem.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Hartalega.FloorSystem.IntegrationServices\Hartalega.FloorSystem.IntegrationServices.csproj">
+      <Project>{9c5bcd75-b276-49c7-84b4-da84bfa5d74f}</Project>
+      <Name>Hartalega.FloorSystem.IntegrationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hartalega.FloorSystem.Business.Logic\Hartalega.FloorSystem.Business.Logic.csproj">
+      <Project>{ed508a65-f474-43f2-a496-3499f3058be1}</Project>
+      <Name>Hartalega.FloorSystem.Business.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Engine\cs\setup.xml" />
+    <Content Include="Engine\de\setup.xml" />
+    <Content Include="Engine\en\setup.xml" />
+    <Content Include="Engine\es\setup.xml" />
+    <Content Include="Engine\fr\setup.xml" />
+    <Content Include="Engine\it\setup.xml" />
+    <Content Include="Engine\ja\setup.xml" />
+    <Content Include="Engine\ko\setup.xml" />
+    <Content Include="Engine\pl\setup.xml" />
+    <Content Include="Engine\pt-BR\setup.xml" />
+    <Content Include="Engine\ru\setup.xml" />
+    <Content Include="Engine\tr\setup.xml" />
+    <Content Include="Engine\zh-Hans\setup.xml" />
+    <Content Include="Engine\zh-Hant\setup.xml" />
+    <Content Include="HartalegaGlobe.ico" />
+    <Content Include="images\Fail.PNG" />
+    <Content Include="images\HartalegaGlobe.ico" />
+    <Content Include="images\HartalegaNewLogo.ico" />
+    <Content Include="images\page_white_add.png" />
+    <Content Include="images\page_white_edit.png" />
+    <Content Include="images\Pass.PNG" />
+    <Content Include="Reports\Production_System_Reports.sln" />
+    <Content Include="Reports\TVReports.sln" />
+    <Content Include="Resources\accept.png" />
+    <None Include="Reports\DailybyLine.rdl" />
+    <None Include="Reports\OEEByLine.rdl" />
+    <None Include="Reports\OEEByPlant.rdl" />
+    <None Include="Reports\OEEByPlantWideByMonth.rdl" />
+    <None Include="Reports\OEEPlantbyMonthRange.rdl" />
+    <None Include="Reports\PlantbyDateRange.rdl" />
+    <None Include="Reports\PlantbyMonthRange.rdl" />
+    <None Include="Reports\PlantWidebyMonthRange.rdl" />
+    <None Include="Reports\QAIMonitoring.rdl" />
+    <None Include="Reports\TenPcsWeight.rdl" />
+    <None Include="Resources\Green_New.bmp" />
+    <Content Include="Resources\Green_New.png" />
+    <Content Include="Resources\Red_New.png" />
+    <Content Include="Resources\Yellow.png" />
+    <Content Include="Resources\Yellow_New.png" />
+    <Content Include="Resources\add.bmp" />
+    <Content Include="Resources\arrow_refresh.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\Cuff.png" />
+    <Content Include="Resources\Green.png" />
+    <Content Include="Resources\page_save.png" />
+    <Content Include="Resources\pg_wh_add.png" />
+    <Content Include="Resources\pg_wh_del.png" />
+    <Content Include="Resources\pg_white_edit.png" />
+    <Content Include="Resources\pg_wh_excel.png" />
+    <Content Include="Resources\pg_wh_mag.png" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\Red.png" />
+    <Content Include="Resources\start.png" />
+    <Content Include="Resources\stop.png" />
+    <Content Include="Resources\tick.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <AssemblyFileName>.\..\..\ExternalDLL\Microsoft.Web.Publishing.Tasks.dll</AssemblyFileName>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(AssemblyFileName)" />
+  <Target Name="AfterCompile" Condition="Exists('App.$(Configuration).config')">
+    <!--Generate transformed app config in the intermediate directory-->
+    <TransformXml Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <!--Force build process to use the transformed configuration file from now on.-->
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="App.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <!--Override After Publish to support ClickOnce AfterPublish. Target replaces the untransformed config file copied to the deployment directory with the transformed one.-->
+  <Target Name="AfterPublish">
+    <PropertyGroup>
+      <DeployedConfig>$(_DeploymentApplicationDir)$(TargetName)$(TargetExt).config$(_DeploymentFileMappingExtension)</DeployedConfig>
+    </PropertyGroup>
+    <!--Publish copies the untransformed App.config to deployment directory so overwrite it-->
+    <Copy Condition="Exists('$(DeployedConfig)')" SourceFiles="$(IntermediateOutputPath)$(TargetFileName).config" DestinationFiles="$(DeployedConfig)" />
+  </Target>
+</Project>

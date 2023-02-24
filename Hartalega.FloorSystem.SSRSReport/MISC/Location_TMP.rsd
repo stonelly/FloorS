@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>TMP</DataSourceReference>
+      <CommandText>SELECT LocationName, LocationID FROM tblLocation WHERE Del &lt;&gt; 1 AND LocationType = 2 ORDER BY  RIGHT(RTRIM(LocationName), 2)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="LocationName">
+        <DataField>LocationName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LocationID">
+        <DataField>LocationID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

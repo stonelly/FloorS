@@ -1,0 +1,141 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDLL", "ExternalDLL", "{E89AF528-33BC-40CD-8AD4-ACAF8247DAE2}"
+	ProjectSection(SolutionItems) = preProject
+		..\ExternalDLL\Microsoft.Dynamics.BusinessConnectorNet.dll = ..\ExternalDLL\Microsoft.Dynamics.BusinessConnectorNet.dll
+		..\ExternalDLL\Microsoft.Office.Interop.Excel.dll = ..\ExternalDLL\Microsoft.Office.Interop.Excel.dll
+		..\ExternalDLL\Microsoft.Office.Interop.Excel.xml = ..\ExternalDLL\Microsoft.Office.Interop.Excel.xml
+		..\ExternalDLL\Microsoft.ReportViewer.WebForms.DLL = ..\ExternalDLL\Microsoft.ReportViewer.WebForms.DLL
+		..\ExternalDLL\Microsoft.Web.Publishing.Tasks.dll = ..\ExternalDLL\Microsoft.Web.Publishing.Tasks.dll
+		..\ExternalDLL\Microsoft.Web.XmlTransform.dll = ..\ExternalDLL\Microsoft.Web.XmlTransform.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.IntegrationServices", "..\Hartalega.FloorSystem.IntegrationServices\Hartalega.FloorSystem.IntegrationServices.csproj", "{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Windows.UI", "Hartalega.FloorSystem.Windows.UI\Hartalega.FloorSystem.Windows.UI.csproj", "{CDF39172-870A-4CA2-92F1-70FC64C51E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Framework", "..\Hartalega.FloorSystem.Framework\Hartalega.FloorSystem.Framework.csproj", "{C58265AF-4F65-404A-ACDC-CDF77B7C937A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Business.Logic", "..\Hartalega.FloorSystem.Business.Logic\Hartalega.FloorSystem.Business.Logic.csproj", "{ED508A65-F474-43F2-A496-3499F3058BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.WorkOrderSync", "..\Hartalega.FloorSystem.WorkOrderSync\Hartalega.FloorSystem.WorkOrderSync.csproj", "{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.SendEmail", "..\Hartalega.FloorSystem.SendEmail\Hartalega.FloorSystem.SendEmail.csproj", "{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production|Any CPU = Production|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SIT|Any CPU = SIT|Any CPU
+		UAT|Any CPU = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Production|Any CPU.Build.0 = Production|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.QA|Any CPU.Build.0 = QA|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Production|Any CPU.Build.0 = Production|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.QA|Any CPU.Build.0 = QA|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{CDF39172-870A-4CA2-92F1-70FC64C51E25}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Production|Any CPU.Build.0 = Production|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.QA|Any CPU.Build.0 = QA|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Production|Any CPU.Build.0 = Production|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.QA|Any CPU.Build.0 = QA|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Production|Any CPU.Build.0 = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.QA|Any CPU.Build.0 = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.SIT|Any CPU.ActiveCfg = Debug|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.SIT|Any CPU.Build.0 = Debug|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{93209078-CA8D-4A61-AE33-B7DADE5AD6B3}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Production|Any CPU.Build.0 = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.QA|Any CPU.Build.0 = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.SIT|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.SIT|Any CPU.Build.0 = Debug|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.UAT|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED4F8AB-4527-4248-BB6F-A7E1151DD30E}.UAT|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5229188F-32D2-4DE5-8557-FA4469716B89}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bj-tfs:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = ..\\Hartalega.FloorSystem.IntegrationServices\\Hartalega.FloorSystem.IntegrationServices.csproj
+		SccProjectName0 = ../Hartalega.FloorSystem.IntegrationServices
+		SccLocalPath0 = ..\\Hartalega.FloorSystem.IntegrationServices
+		SccProjectUniqueName1 = Hartalega.FloorSystem.Windows.UI\\Hartalega.FloorSystem.Windows.UI.csproj
+		SccProjectName1 = Hartalega.FloorSystem.Windows.UI
+		SccLocalPath1 = Hartalega.FloorSystem.Windows.UI
+		SccProjectUniqueName2 = ..\\Hartalega.FloorSystem.Framework\\Hartalega.FloorSystem.Framework.csproj
+		SccProjectName2 = ../Hartalega.FloorSystem.Framework
+		SccLocalPath2 = ..\\Hartalega.FloorSystem.Framework
+		SccProjectUniqueName3 = ..\\Hartalega.FloorSystem.Business.Logic\\Hartalega.FloorSystem.Business.Logic.csproj
+		SccProjectName3 = ../Hartalega.FloorSystem.Business.Logic
+		SccLocalPath3 = ..\\Hartalega.FloorSystem.Business.Logic
+		SccLocalPath4 = .
+		SccProjectUniqueName5 = ..\\Hartalega.FloorSystem.SendEmail\\Hartalega.FloorSystem.SendEmail.csproj
+		SccProjectName5 = ../Hartalega.FloorSystem.SendEmail
+		SccLocalPath5 = ..\\Hartalega.FloorSystem.SendEmail
+		SccProjectUniqueName6 = ..\\Hartalega.FloorSystem.WorkOrderSync\\Hartalega.FloorSystem.WorkOrderSync.csproj
+		SccProjectName6 = ../Hartalega.FloorSystem.WorkOrderSync
+		SccLocalPath6 = ..\\Hartalega.FloorSystem.WorkOrderSync
+	EndGlobalSection
+EndGlobal

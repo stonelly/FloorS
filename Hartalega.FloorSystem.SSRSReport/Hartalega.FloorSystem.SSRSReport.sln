@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OEE", "OEE\OEE.rptproj", "{82792E6A-4091-496C-9251-11BF51A2C9C6}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OEEV2", "OEEV2\OEEV2.rptproj", "{07E1304A-84D4-4454-BF40-D9A65BFB9340}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ProductionSystemReport", "ProductionSystemReport\ProductionSystemReport.rptproj", "{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "BARCODE", "BARCODE\BARCODE.rptproj", "{A3B60212-F849-434E-BB9D-2D7A25FF2813}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MISC", "MISC\MISC.rptproj", "{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Debug|Default.ActiveCfg = Debug
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Debug|Default.Build.0 = Debug
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Debug|Default.Deploy.0 = Debug
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.DebugLocal|Default.Build.0 = DebugLocal
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Release|Default.ActiveCfg = Release
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Release|Default.Build.0 = Release
+		{82792E6A-4091-496C-9251-11BF51A2C9C6}.Release|Default.Deploy.0 = Release
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Debug|Default.ActiveCfg = Debug
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Debug|Default.Build.0 = Debug
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Debug|Default.Deploy.0 = Debug
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.DebugLocal|Default.Build.0 = DebugLocal
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Release|Default.ActiveCfg = Release
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Release|Default.Build.0 = Release
+		{07E1304A-84D4-4454-BF40-D9A65BFB9340}.Release|Default.Deploy.0 = Release
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Debug|Default.ActiveCfg = Debug
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Debug|Default.Build.0 = Debug
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Debug|Default.Deploy.0 = Debug
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.DebugLocal|Default.Build.0 = DebugLocal
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Release|Default.ActiveCfg = Release
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Release|Default.Build.0 = Release
+		{9B8641E0-5B0F-42B4-86C9-248AF8BE6A51}.Release|Default.Deploy.0 = Release
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Debug|Default.ActiveCfg = Debug
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Debug|Default.Build.0 = Debug
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Debug|Default.Deploy.0 = Debug
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.DebugLocal|Default.Build.0 = DebugLocal
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Release|Default.ActiveCfg = Release
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Release|Default.Build.0 = Release
+		{A3B60212-F849-434E-BB9D-2D7A25FF2813}.Release|Default.Deploy.0 = Release
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Debug|Default.ActiveCfg = Debug
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Debug|Default.Build.0 = Debug
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Debug|Default.Deploy.0 = Debug
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.DebugLocal|Default.Build.0 = DebugLocal
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Release|Default.ActiveCfg = Release
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Release|Default.Build.0 = Release
+		{3D7F96E6-9889-4AEB-AFD8-C13028D2414A}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84349F1D-537A-4733-9FDB-44017306D3A8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bj-tfs:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OEEV2\\OEEV2.rptproj
+		SccProjectName1 = OEEV2
+		SccLocalPath1 = OEEV2
+		SccProjectUniqueName2 = OEE\\OEE.rptproj
+		SccProjectName2 = OEE
+		SccLocalPath2 = OEE
+		SccProjectUniqueName3 = ProductionSystemReport\\ProductionSystemReport.rptproj
+		SccProjectName3 = ProductionSystemReport
+		SccLocalPath3 = ProductionSystemReport
+		SccProjectUniqueName4 = BARCODE\\BARCODE.rptproj
+		SccProjectName4 = BARCODE
+		SccLocalPath4 = BARCODE
+		SccProjectUniqueName5 = MISC\\MISC.rptproj
+		SccProjectName5 = MISC
+		SccLocalPath5 = MISC
+	EndGlobalSection
+EndGlobal

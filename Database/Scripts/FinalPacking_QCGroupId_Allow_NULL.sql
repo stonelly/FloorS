@@ -1,0 +1,5 @@
+
+ALTER TABLE FinalPacking ALTER COLUMN QCGroupId INT NULL  
+
+
+  

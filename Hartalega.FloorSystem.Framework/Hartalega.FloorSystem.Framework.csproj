@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C58265AF-4F65-404A-ACDC-CDF77B7C937A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hartalega.FloorSystem.Framework</RootNamespace>
+    <AssemblyName>Hartalega.FS.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Hartalega.FS.Framework.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <OutputPath>bin\QA\</OutputPath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SIT|AnyCPU'">
+    <OutputPath>bin\SIT\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|AnyCPU'">
+    <OutputPath>bin\UAT\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Production|AnyCPU'">
+    <OutputPath>bin\Production\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BarCodeLib\BarcodeCommon.cs" />
+    <Compile Include="BarCodeLib\BarcodeLib.cs" />
+    <Compile Include="BarCodeLib\BarcodeXML.cs" />
+    <Compile Include="BarCodeLib\Blank.cs" />
+    <Compile Include="BarCodeLib\Code39.cs" />
+    <Compile Include="BarCodeLib\IBarcode.cs" />
+    <Compile Include="BarCodeLib\Interleaved2of5.cs" />
+    <Compile Include="Business\BusinessBase.cs" />
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Common\DateFunctions.cs" />
+    <Compile Include="Common\DateValidation.cs" />
+    <Compile Include="Common\Email.cs">
+      <ExcludeFromStyleCop>False</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Common\EncryptDecrypt.cs" />
+    <Compile Include="Common\FileManager.cs" />
+    <Compile Include="Common\ConfigManager.cs" />
+    <Compile Include="Common\GlobalMessageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\GlobalMessageBox.Designer.cs">
+      <DependentUpon>GlobalMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\JSONHandler.cs" />
+    <Compile Include="Common\RegExpPattern.cs" />
+    <Compile Include="Common\ValidationMessage.cs" />
+    <Compile Include="Common\Validator.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Database\FloorDBAccess.cs" />
+    <Compile Include="DbExceptionLog\FloorSystemException.cs" />
+    <Compile Include="Common\DirectPrinter.cs" />
+    <Compile Include="FSIntegration.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HSBHWInterface.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="PrintTestSlipDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web.Asp.Net.UI\Webpage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows.UI.Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows.UI.Forms\GloveOutputReportResetType.cs" />
+    <Compile Include="Windows.UI.Forms\QAIBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSDDatabase\SecurityModuleDataXSD.cs">
+      <DependentUpon>SecurityModuleDataXSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSDDatabase\SecurityModuleDataXSD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecurityModuleDataXSD.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Key.snk" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings.StyleCop" />
+    <None Include="XSDDatabase\SecurityModuleDataXSD.xsc">
+      <DependentUpon>SecurityModuleDataXSD.xsd</DependentUpon>
+    </None>
+    <None Include="XSDDatabase\SecurityModuleDataXSD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecurityModuleDataXSD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="XSDDatabase\SecurityModuleDataXSD.xss">
+      <DependentUpon>SecurityModuleDataXSD.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\Hartalega.FloorSystem.Windows.UI\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbExceptionLog\LogExceptionQuery.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\GlobalMessageBox.resx">
+      <DependentUpon>GlobalMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+﻿.GridCell100 {
+    /*font-size: medium;*/
+    font-weight: bold;
+    text-align: center;
+}
+
+.GridCell {
+    /*font-size: large;*/
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Web.UI.TV", "Hartalega.FloorSystem.Web.UI.TV\Hartalega.FloorSystem.Web.UI.TV.csproj", "{0EB189EB-A849-4AE4-AA98-56A4867BA22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Business.Logic", "..\Hartalega.FloorSystem.Business.Logic\Hartalega.FloorSystem.Business.Logic.csproj", "{ED508A65-F474-43F2-A496-3499F3058BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.Framework", "..\Hartalega.FloorSystem.Framework\Hartalega.FloorSystem.Framework.csproj", "{C58265AF-4F65-404A-ACDC-CDF77B7C937A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.IntegrationServices", "..\Hartalega.FloorSystem.IntegrationServices\Hartalega.FloorSystem.IntegrationServices.csproj", "{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.FloorSystem.ScreenCapture", "Hartalega.FloorSystem.Web.ScreenCapture\Hartalega.FloorSystem.ScreenCapture.csproj", "{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production|Any CPU = Production|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SIT|Any CPU = SIT|Any CPU
+		UAT|Any CPU = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Production|Any CPU.Build.0 = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.QA|Any CPU.Build.0 = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.SIT|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.SIT|Any CPU.Build.0 = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.UAT|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB189EB-A849-4AE4-AA98-56A4867BA22F}.UAT|Any CPU.Build.0 = Release|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Production|Any CPU.Build.0 = Production|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.QA|Any CPU.Build.0 = QA|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{ED508A65-F474-43F2-A496-3499F3058BE1}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Production|Any CPU.Build.0 = Production|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.QA|Any CPU.Build.0 = QA|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{C58265AF-4F65-404A-ACDC-CDF77B7C937A}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Production|Any CPU.Build.0 = Production|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.QA|Any CPU.Build.0 = QA|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.SIT|Any CPU.ActiveCfg = SIT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.SIT|Any CPU.Build.0 = SIT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{9C5BCD75-B276-49C7-84B4-DA84BFA5D74F}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Production|Any CPU.Build.0 = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.QA|Any CPU.Build.0 = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.SIT|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.SIT|Any CPU.Build.0 = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.UAT|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFE97A3-5C0B-446F-8C1F-56159B4BED41}.UAT|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AF4A916-0824-462F-9481-E956E2C2D3E2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bj-tfs:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = Hartalega.FloorSystem.Web.UI.TV\\Hartalega.FloorSystem.Web.UI.TV.csproj
+		SccProjectName0 = Hartalega.FloorSystem.Web.UI.TV
+		SccLocalPath0 = Hartalega.FloorSystem.Web.UI.TV
+		SccProjectUniqueName1 = ..\\Hartalega.FloorSystem.Business.Logic\\Hartalega.FloorSystem.Business.Logic.csproj
+		SccProjectName1 = ../Hartalega.FloorSystem.Business.Logic
+		SccLocalPath1 = ..\\Hartalega.FloorSystem.Business.Logic
+		SccProjectUniqueName2 = ..\\Hartalega.FloorSystem.Framework\\Hartalega.FloorSystem.Framework.csproj
+		SccProjectName2 = ../Hartalega.FloorSystem.Framework
+		SccLocalPath2 = ..\\Hartalega.FloorSystem.Framework
+		SccProjectUniqueName3 = ..\\Hartalega.FloorSystem.IntegrationServices\\Hartalega.FloorSystem.IntegrationServices.csproj
+		SccProjectName3 = ../Hartalega.FloorSystem.IntegrationServices
+		SccLocalPath3 = ..\\Hartalega.FloorSystem.IntegrationServices
+		SccLocalPath4 = .
+		SccProjectUniqueName5 = Hartalega.FloorSystem.Web.ScreenCapture\\Hartalega.FloorSystem.ScreenCapture.csproj
+		SccProjectName5 = Hartalega.FloorSystem.Web.ScreenCapture
+		SccLocalPath5 = Hartalega.FloorSystem.Web.ScreenCapture
+	EndGlobalSection
+EndGlobal

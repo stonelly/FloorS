@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FSDB">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Server=HSD-SVR-0042-V;Database=FloorSystem;user Id=FSDB;password=P@ssword01;</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>44fe72f8-8c21-49f6-b5f1-eb388c050a63</DataSourceID>
+</RptDataSource>

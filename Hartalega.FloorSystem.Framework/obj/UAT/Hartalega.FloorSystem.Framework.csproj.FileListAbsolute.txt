@@ -1,0 +1,12 @@
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\bin\UAT\Hartalega.FS.Framework.dll.config
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\bin\UAT\Hartalega.FS.Framework.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\bin\UAT\Hartalega.FS.Framework.pdb
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\bin\UAT\log4net.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\bin\UAT\log4net.xml
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FloorSystem.Framework.Common.GlobalMessageBoxLabel.resources
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FloorSystem.Framework.csproj.GenerateResource.cache
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FloorSystem.Framework.csproj.CoreCompileInputs.cache
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FloorSystem.Framework.csproj.CopyComplete
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FS.Framework.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FS.Framework.pdb
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.Framework\obj\UAT\Hartalega.FloorSystem.Framework.csprojAssemblyReference.cache

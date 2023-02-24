@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e6d4533-0987-4819-bbc4-03b51da38860" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://NGC-DEVVM5:8101/DynamicsAx/Services/AvaInterfaceServices" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AvaInterfaceServices3.wsdl" MetadataType="Wsdl" ID="0feb8286-ceb9-4ad7-bdb2-b22854b17738" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices" />
+    <MetadataFile FileName="AvaInterfaceServices9.xsd" MetadataType="Schema" ID="d8e6a946-8821-45e1-80dd-69ea56ca68bd" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd4" />
+    <MetadataFile FileName="AvaInterfaceServices4.wsdl" MetadataType="Wsdl" ID="092527d9-5cac-4871-9607-c292f646a455" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?wsdl=wsdl0" />
+    <MetadataFile FileName="AvaInterfaceServices10.xsd" MetadataType="Schema" ID="ccfd826f-87a2-4c6e-9aad-d7dd86faeece" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd7" />
+    <MetadataFile FileName="AvaInterfaceServices11.xsd" MetadataType="Schema" ID="1b73bfea-15f1-46b0-a9d2-f035b34b37b0" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd1" />
+    <MetadataFile FileName="AvaInterfaceServices12.xsd" MetadataType="Schema" ID="1bba23fb-2a16-4fb7-ae25-a9fcd8ab4a08" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd5" />
+    <MetadataFile FileName="AvaInterfaceServices13.xsd" MetadataType="Schema" ID="e149e76d-d89d-4573-a70f-274a0f4c8817" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd3" />
+    <MetadataFile FileName="AvaInterfaceServices14.xsd" MetadataType="Schema" ID="6799d3f2-38b6-440c-a9b0-4934e2d92037" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd2" />
+    <MetadataFile FileName="AvaInterfaceServices15.xsd" MetadataType="Schema" ID="2724fed1-c7cb-488b-8620-5da643ac80a6" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd6" />
+    <MetadataFile FileName="AvaInterfaceServices16.xsd" MetadataType="Schema" ID="14c1a5b1-9341-444e-b5e8-918f93755a5f" SourceId="1" SourceUrl="http://ngc-devvm5:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

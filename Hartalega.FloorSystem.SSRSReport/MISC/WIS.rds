@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="WIS">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=hsd-svr-0023-v;Initial Catalog=WIS</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3cb2c8e5-ef6d-4488-a516-ba16fd7e35fd</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.BarcodeScannerIntegrator", "Hartalega.BarcodeScannerIntegrator\Hartalega.BarcodeScannerIntegrator.csproj", "{D8999C65-DF31-464D-9271-AEC7634F8E78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartalega.BarcodeScannerIntegratorUnitTests", "Hartalega.BarcodeScannerIntegratorUnitTests\Hartalega.BarcodeScannerIntegratorUnitTests.csproj", "{66583D4E-8095-48F8-BE53-B3C4647BC82E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8999C65-DF31-464D-9271-AEC7634F8E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8999C65-DF31-464D-9271-AEC7634F8E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8999C65-DF31-464D-9271-AEC7634F8E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8999C65-DF31-464D-9271-AEC7634F8E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66583D4E-8095-48F8-BE53-B3C4647BC82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66583D4E-8095-48F8-BE53-B3C4647BC82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66583D4E-8095-48F8-BE53-B3C4647BC82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66583D4E-8095-48F8-BE53-B3C4647BC82E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {896EAF17-E21A-4BF4-8E2B-A797C1E87393}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://9dot.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Hartalega.BarcodeScannerIntegrator\\Hartalega.BarcodeScannerIntegrator.csproj
+		SccProjectName1 = Hartalega.BarcodeScannerIntegrator
+		SccLocalPath1 = Hartalega.BarcodeScannerIntegrator
+		SccProjectUniqueName2 = Hartalega.BarcodeScannerIntegratorUnitTests\\Hartalega.BarcodeScannerIntegratorUnitTests.csproj
+		SccProjectName2 = Hartalega.BarcodeScannerIntegratorUnitTests
+		SccLocalPath2 = Hartalega.BarcodeScannerIntegratorUnitTests
+	EndGlobalSection
+EndGlobal

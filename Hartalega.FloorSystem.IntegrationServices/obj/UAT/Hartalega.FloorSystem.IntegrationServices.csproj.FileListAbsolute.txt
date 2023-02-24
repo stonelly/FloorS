@@ -1,0 +1,13 @@
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Integration.dll.config
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Integration.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Integration.pdb
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Framework.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\log4net.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Framework.pdb
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\Hartalega.FS.Framework.dll.config
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\bin\UAT\log4net.xml
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\obj\UAT\Hartalega.FloorSystem.IntegrationServices.csprojAssemblyReference.cache
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\obj\UAT\Hartalega.FloorSystem.IntegrationServices.csproj.CoreCompileInputs.cache
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\obj\UAT\Hartalega.FloorSystem.IntegrationServices.csproj.CopyComplete
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\obj\UAT\Hartalega.FS.Integration.dll
+C:\TFS\HSBFloorSystemD365\Trunk\UAT\Hartalega.FloorSystem.IntegrationServices\obj\UAT\Hartalega.FS.Integration.pdb

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d9b4e978-e717-452b-a3ce-00849a154970" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ImportParentServiceGroup.xsd" MetadataType="Schema" ID="6fdb5398-66b6-41ec-9190-705e2593212c" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="ImportParentServiceGroup.wsdl" MetadataType="Wsdl" ID="f41bd53e-32c0-44f1-bea3-9e4a5e5d6cdb" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ImportParentServiceGroup1.xsd" MetadataType="Schema" ID="1858b40c-0d05-4b69-a051-495352c06a54" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="ImportParentServiceGroup2.xsd" MetadataType="Schema" ID="424454b3-cec3-4f3b-b9a7-a8e4847157e7" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="ImportParentServiceGroup3.xsd" MetadataType="Schema" ID="9af6e098-8b7d-4be3-aba6-a20c2bb13ef9" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="ImportParentServiceGroup4.xsd" MetadataType="Schema" ID="797d6307-6cfb-4054-a021-1f46701832a1" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="ImportParentServiceGroup1.wsdl" MetadataType="Wsdl" ID="34f74c5f-82c9-4497-9b5e-b8149c622b5f" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup" />
+    <MetadataFile FileName="ImportParentServiceGroup5.xsd" MetadataType="Schema" ID="e9f7ad41-98de-401e-b2a5-df6c6b572541" SourceId="1" SourceUrl="http://hep-ax-qa.gmd.lab:8101/DynamicsAx/Services/ImportParentServiceGroup?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

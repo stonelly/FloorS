@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TMP">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=hsb-svr-0101-v;Initial Catalog=TMPDB</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>841888b1-fa13-4da0-b21f-dd22fd10812d</DataSourceID>
+</RptDataSource>

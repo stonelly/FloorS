@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="http://ngc-uat-aos:8101/DynamicsAx/Services/AvaInterfaceServices?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AVABOMJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BatchWeight" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Configuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostingDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="QCType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Shift" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Weightof10Pcs" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AVABOMJournalContract" nillable="true" type="tns:AVABOMJournalContract" />
+  <xs:complexType name="AVAFGJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Configuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CustomerLotNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpiryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="InnerLotNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ManufacturingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OuterLotNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostingDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Preshipment" type="q2:NoYes" />
+          <xs:element minOccurs="0" name="PreshipmentCases" type="xs:int" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefBatchNumber4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefConfiguration1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefConfiguration2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefConfiguration3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefConfiguration4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefConfiguration5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNumberOfPieces1" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefNumberOfPieces2" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefNumberOfPieces3" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefNumberOfPieces4" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefNumberOfPieces5" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SalesOrderNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AVAFGJournalContract" nillable="true" type="tns:AVAFGJournalContract" />
+  <xs:complexType name="AvaInterfaceContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BOMJournal" nillable="true" type="tns:AVABOMJournalContract" />
+          <xs:element minOccurs="0" name="BatchCardNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BatchNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BatchSequence" type="xs:int" />
+          <xs:element minOccurs="0" name="FGJournal" nillable="true" type="tns:AVAFGJournalContract" />
+          <xs:element minOccurs="0" name="FSIdentifier" type="ser:guid" />
+          <xs:element minOccurs="0" name="FunctionID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MovementJournal" nillable="true" type="tns:AVAMovementJournalContract" />
+          <xs:element minOccurs="0" name="RAFStgJournal" nillable="true" type="tns:AVARAFStgJournalContract" />
+          <xs:element minOccurs="0" name="ReferenceBatchNumber1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceBatchNumber2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceBatchNumber3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceBatchNumber4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceBatchNumber5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceBatchSequence1" type="xs:int" />
+          <xs:element minOccurs="0" name="ReferenceBatchSequence2" type="xs:int" />
+          <xs:element minOccurs="0" name="ReferenceBatchSequence3" type="xs:int" />
+          <xs:element minOccurs="0" name="ReferenceBatchSequence4" type="xs:int" />
+          <xs:element minOccurs="0" name="ReferenceBatchSequence5" type="xs:int" />
+          <xs:element minOccurs="0" name="TransferJournal" nillable="true" type="tns:AVATransferJournalContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AvaInterfaceContract" nillable="true" type="tns:AvaInterfaceContract" />
+  <xs:complexType name="AVAMovementJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BatchWeight" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Configuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostingDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="QCType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RefConfiguration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceItemNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResourceGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SalesOrderNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Shift" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToBatchNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Weightof10Pcs" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AVAMovementJournalContract" nillable="true" type="tns:AVAMovementJournalContract" />
+  <xs:complexType name="AVARAFStgJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q5:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BatchWeight" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CalcLooseQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Configuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostingDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="QCType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RAFGoodQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RAFGoodQtyLoose" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RAFHBSample" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RAFVTSample" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RAFWTSample" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RejectedQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RejectedSampleQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SampleWarehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SecGradeQty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Shift" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Weightof10Pcs" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AVARAFStgJournalContract" nillable="true" type="tns:AVARAFStgJournalContract" />
+  <xs:complexType name="AVATransferJournalContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q6:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Configuration" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ScanInDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ScanOutDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ToWarehouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AVATransferJournalContract" nillable="true" type="tns:AVATransferJournalContract" />
+</xs:schema>

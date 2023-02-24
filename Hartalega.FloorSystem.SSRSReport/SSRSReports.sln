@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MISC", "MISC\MISC.rptproj", "{640A7A6E-4D57-4E53-916B-6B9E4563D387}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OEEV2", "OEEV2\OEEV2.rptproj", "{446D70B0-B6DA-4E85-904B-99BA8608C909}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ProductionSystemReport", "ProductionSystemReport\ProductionSystemReport.rptproj", "{D6020EE6-59E9-489A-B516-181440B64C20}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OEE", "OEE\OEE.rptproj", "{9D3027FD-8B34-4438-B3D0-470244C89937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Debug|Any CPU.ActiveCfg = Debug
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Debug|Any CPU.Build.0 = Debug
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Debug|Any CPU.Deploy.0 = Debug
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Release|Any CPU.ActiveCfg = Release
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Release|Any CPU.Build.0 = Release
+		{640A7A6E-4D57-4E53-916B-6B9E4563D387}.Release|Any CPU.Deploy.0 = Release
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Debug|Any CPU.ActiveCfg = Debug
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Debug|Any CPU.Build.0 = Debug
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Debug|Any CPU.Deploy.0 = Debug
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Release|Any CPU.ActiveCfg = Release
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Release|Any CPU.Build.0 = Release
+		{446D70B0-B6DA-4E85-904B-99BA8608C909}.Release|Any CPU.Deploy.0 = Release
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Debug|Any CPU.ActiveCfg = Debug
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Debug|Any CPU.Build.0 = Debug
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Debug|Any CPU.Deploy.0 = Debug
+		{D6020EE6-59E9-489A-B516-181440B64C20}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{D6020EE6-59E9-489A-B516-181440B64C20}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{D6020EE6-59E9-489A-B516-181440B64C20}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Release|Any CPU.ActiveCfg = Release
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Release|Any CPU.Build.0 = Release
+		{D6020EE6-59E9-489A-B516-181440B64C20}.Release|Any CPU.Deploy.0 = Release
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Debug|Any CPU.ActiveCfg = Debug
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Debug|Any CPU.Build.0 = Debug
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Debug|Any CPU.Deploy.0 = Debug
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Release|Any CPU.ActiveCfg = Release
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Release|Any CPU.Build.0 = Release
+		{9D3027FD-8B34-4438-B3D0-470244C89937}.Release|Any CPU.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {996E89CF-FB9F-4A9B-8FE3-CF0F10C5E558}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bj-tfs:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MISC\\MISC.rptproj
+		SccProjectName1 = MISC
+		SccLocalPath1 = MISC
+		SccProjectUniqueName2 = OEEV2\\OEEV2.rptproj
+		SccProjectName2 = OEEV2
+		SccLocalPath2 = OEEV2
+		SccProjectUniqueName3 = ProductionSystemReport\\ProductionSystemReport.rptproj
+		SccProjectName3 = ProductionSystemReport
+		SccLocalPath3 = ProductionSystemReport
+		SccProjectUniqueName4 = OEE\\OEE.rptproj
+		SccProjectName4 = OEE
+		SccLocalPath4 = OEE
+	EndGlobalSection
+EndGlobal
